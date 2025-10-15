@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +28,74 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* ======== Navigation Menu ======== */
+    #navmenu {
+      display: flex;
+      justify-content: center; /* يخلي القائمة في النص أفقيًا */
+      align-items: center;
+      width: 100%;
+      background-color: #0c0c0c; /* لون خلفية الهيدر */
+      padding: 15px 0;
+      position: fixed; /* يخليه ثابت فوق */
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    #navmenu ul {
+      list-style: none;
+      display: flex;
+      gap: 25px; /* المسافة بين العناصر */
+      margin: 0;
+      padding: 0;
+    }
+
+    #navmenu li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    #navmenu li a:hover,
+    #navmenu li a.active {
+      color: #00bfff; /* لون عند المرور أو الصفحة النشطة */
+    }
+
+    body {
+      margin: 0;
+      padding-top: 70px; /* علشان المحتوى ما يختفيش تحت الهيدر الثابت */
+      font-family: "Poppins", sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Navigation ======= -->
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li class="dropdown">
+        <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <ul>
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</html>
+
 
   <!-- =======================================================
   * Template Name: FolioOne
