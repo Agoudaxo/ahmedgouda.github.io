@@ -4,47 +4,72 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Portfolio - Ahmed Gouda</title>
+  <meta name="description" content="Showcase of Ahmed Gouda's 3D work, featuring environmental art, VFX breakdowns, and commercial projects.">
+  <meta name="keywords" content="Portfolio, 3D Generalist, VFX, Showreel, Ahmed Gouda">
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .video-grid-item {
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+    .video-grid-item:hover {
+      transform: translateY(-5px);
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: #000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-caption {
+      padding-top: 15px;
+    }
+    .video-caption h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .video-caption p {
+      color: #777;
+      font-size: 14px;
+      margin: 0;
+    }
+  </style>
+
 </head>
 
 <body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -53,17 +78,16 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <div class="header-social-links">
-   <a href="https://www.linkedin.com/in/goudacgi"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.facebook.com/goudacgi/"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/gouda_cgi/"><i class="bi bi-instagram"></i></a>
-        <a href="https://x.com/goudacgi"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://x.com/AhmedGoudaxo" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ahmedgoudaxo/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
 
     </div>
@@ -71,171 +95,88 @@
 
   <main class="main">
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio</li>
+          </ol>
+        </nav>
+        <h1>Work & Breakdowns</h1>
+        <p>A selection of my latest work in Environment Art, VFX, and Set Extension.</p>
+      </div>
+    </div><section id="portfolio" class="portfolio section">
+      <div class="container" data-aos="fade-up">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Explore a curated selection of my 3D projects, showcasing creativity, technical skill, and attention to detail</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-Television">Television</li>
-            <li data-filter=".filter-Film">Film</li>
-            <li data-filter=".filter-Commercial">Commercial</li>
-            <li data-filter=".filter-Personal">Personal</li>
-
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Film">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://youtu.be/qb-DviH2h9U?si=rr9u8c1SfCH9uV0c" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Welad Rizq III</h4>
-                  <div class="portfolio-tags">
-                    <span>Film</span>
-                  </div>
-                </div>
-              </div>
+        <div class="row">
+          
+          <div class="col-lg-6 col-md-12 video-grid-item">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/gQkSXrKffOI" title="3D Breakdown Compilation" allowfullscreen></iframe>
             </div>
-                      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Film">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-2.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://www.imdb.com/title/tt16539454/" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Pushpa: The Rule - Part 2</h4>
-                  <div class="portfolio-tags">
-                    <span>Film</span>
-                  </div>
-                </div>
-              </div>
+            <div class="video-caption">
+              <h3>3D Breakdown Compilation</h3>
+              <p>Series, Commercials & Films</p>
             </div>
-                      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Film">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-3.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://www.imdb.com/title/tt16539454/" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>El-Amil Sifr</h4>
-                  <div class="portfolio-tags">
-                    <span>Film</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-                      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Film">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-4.jpg" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-4.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://www.imdb.com/title/tt36287332/" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Nogom el sahel7</h4>
-                  <div class="portfolio-tags">
-                    <span>Film</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-           
-          </div><!-- End Portfolio Items Container -->
+          </div>
 
-        </div>
+          <div class="col-lg-6 col-md-12 video-grid-item">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Environment Project" allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+              <h3>Natural Environment Design</h3>
+              <p>Gaea & Houdini Terrain Workflow</p>
+            </div>
+          </div>
 
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-          <a href="#portfolio" class="btn btn-primary">View All Case Studies</a>
+          <div class="col-lg-6 col-md-12 video-grid-item">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="VFX Set Extension" allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+              <h3>VFX Set Extension</h3>
+              <p>Seamless Integration with Live Action</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 video-grid-item">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial Project" allowfullscreen></iframe>
+            </div>
+            <div class="video-caption">
+              <h3>Commercial Work</h3>
+              <p>High-End Product Visualization</p>
+            </div>
+          </div>
+
         </div>
 
       </div>
-                            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Film">
-              <div class="portfolio-card">
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/portfolio-5.jpg" alt="Portfolio Item" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="assets/img/portfolio/portfolio-5.jpg" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    <a href="https://www.imdb.com/es-es/title/tt20244880/?ref_=mv_close/" class="portfolio-details-link"><i class="bi bi-link"></i></a>
-                  </div>
-                </div>
-                <div class="portfolio-info">
-                  <h4>Mr. Ex</h4>
-                  <div class="portfolio-tags">
-                    <span>Film</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-           
-          </div><!-- End Portfolio Items Container -->
-
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-          <a href="#portfolio" class="btn btn-primary">View All Case Studies</a>
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-  </main>
+    </section></main>
 
   <footer id="footer" class="footer">
-
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ahmed Gouda</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ahmed Gouda</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-   <a href="https://www.linkedin.com/in/goudacgi"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.facebook.com/goudacgi/"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/gouda_cgi/"><i class="bi bi-instagram"></i></a>
-        <a href="https://x.com/goudacgi"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://x.com/AhmedGoudaxo"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ahmedgoudaxo/"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
-        Designed by <a href="#">Gouda</a>
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
 
-
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -247,7 +188,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
