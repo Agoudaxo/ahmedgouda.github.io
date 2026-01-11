@@ -32,7 +32,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1387c1; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: hsl(200, 82%, 42%); /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #213642; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #051117; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #e7f2f7; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -144,7 +144,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
+  --background-color: rgba(209, 22, 22, 0);
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 15px 0;
@@ -206,7 +206,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(16, 26, 32, 0.9);
+  --background-color: rgba(0, 0, 0, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -2886,7 +2886,7 @@ section,
 
 /* خامساً: تحديد صورك وتوقيت ظهورها */
 /* ⭐⭐⭐ هنا تضع مسارات صورك الصحيحة ⭐⭐⭐ */
-.slide1 { background-image: url('/assets/img/BK/S03.png'); animation-delay: 0s, 0s; }
+.slide1 { background-image: url('/assets/img/BK/etisalatand.mp4'); animation-delay: 0s, 0s; }
 .slide2 { background-image: url('/assets/img/BK/S03.png'); animation-delay: 10s, 0s; }
 .slide3 { background-image: url('/assets/img/BK/S03.png'); animation-delay: 20s, 0s; }
 
