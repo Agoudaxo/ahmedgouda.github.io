@@ -2886,7 +2886,7 @@ section,
 
 /* خامساً: تحديد صورك وتوقيت ظهورها */
 /* ⭐⭐⭐ هنا تضع مسارات صورك الصحيحة ⭐⭐⭐ */
-.slide1 { background-image: url('/assets/img/BK/S02.png'); animation-delay: 5s, 0s; }
+.slide1 { background-image: url('assets/img/BK/shot50.mp4'); animation-delay: 5s, 0s; }
 .slide2 { background-image: url('/assets/img/BK/S01.png'); animation-delay: 5s, 0s; }
 .slide3 { background-image: url('/assets/img/BK/S03.png'); animation-delay: 5s, 0s; }
 
