@@ -2912,27 +2912,27 @@ section, .section, .footer {
 /* خامساً: التوقيتات الجديدة (كل صورة بتسلم بعد 4 ثواني) */
 
 .slide1 { 
-  background-image: url('/assets/img/BK/S01.png'); 
+  background-image: url('/assets/img/BK/slide01.png'); 
   animation-delay: 0s; 
 }
 
 .slide2 { 
-  background-image: url('/assets/img/BK/S02.png'); 
+  background-image: url('/assets/img/BK/slide02.png'); 
   animation-delay: 4s; /* كانت 6 بقت 4 */
 }
 
 .slide3 { 
-  background-image: url('/assets/img/BK/S03.png'); 
+  background-image: url('/assets/img/BK/slide03.png'); 
   animation-delay: 8s; /* كانت 12 بقت 8 */
 }
 
 .slide4 { 
-  background-image: url('/assets/img/BK/S04.png'); 
+  background-image: url('/assets/img/BK/slide04.png'); 
   animation-delay: 12s; /* كانت 18 بقت 12 */
 }
 
 .slide5 { 
-  background-image: url('/assets/img/BK/S05.png'); 
+  background-image: url('/assets/img/BK/slide05.png'); 
   animation-delay: 16s; /* كانت 24 بقت 16 */
 }
 
