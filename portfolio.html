@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portfolio - Ahmed Gouda</title>
-  <meta name="description" content="Showcase of Ahmed Gouda's 3D work, featuring environmental art, VFX breakdowns, and commercial projects.">
-  <meta name="keywords" content="Portfolio, 3D Generalist, VFX, Showreel, Ahmed Gouda">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -31,14 +31,15 @@
     .video-grid-item:hover {
       transform: translateY(-5px);
     }
+    /* حاوية الفيديو للحفاظ على نسبة 16:9 */
     .video-wrapper {
       position: relative;
       padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
       height: 0;
       overflow: hidden;
-      border-radius: 8px;
+      border-radius: 8px; /* حواف ناعمة */
       background-color: #000;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* ظل خفيف */
     }
     .video-wrapper iframe {
       position: absolute;
@@ -48,11 +49,12 @@
       height: 100%;
       border: 0;
     }
+    /* تنسيق النصوص تحت الفيديو */
     .video-caption {
       padding-top: 15px;
     }
     .video-caption h3 {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       margin-bottom: 5px;
       color: #333;
@@ -103,8 +105,7 @@
             <li class="current">Portfolio</li>
           </ol>
         </nav>
-        <h1>Work & Breakdowns</h1>
-        <p>A selection of my latest work in Environment Art, VFX, and Set Extension.</p>
+        <h1>Portfolio</h1>
       </div>
     </div><section id="portfolio" class="portfolio section">
       <div class="container" data-aos="fade-up">
