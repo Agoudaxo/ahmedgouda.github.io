@@ -24,38 +24,68 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* تنسيق الفواصل بين الأقسام */
-    .portfolio-section-divider {
-      margin-bottom: 60px;
+    /* =========================================
+       تعديل المسافات لعنوان الصفحة (طلبك الحالي)
+       ========================================= */
+    .page-title {
+      padding-top: 120px;    /* مسافة كبيرة من الأعلى */
+      padding-bottom: 80px;  /* مسافة كبيرة من الأسفل */
+    }
+
+    /* فاصل بين الأقسام */
+    .portfolio-category {
+      margin-bottom: 80px;
     }
     
-    .category-title {
-      font-size: 24px;
+    /* تنسيق عناوين الأقسام */
+    .category-header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 15px;
+    }
+    
+    .category-header h2 {
+      font-size: 28px;
       font-weight: 700;
-      color: #333;
-      margin-bottom: 30px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #ddd;
+      color: #111;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+      position: relative;
       display: inline-block;
+    }
+
+    .category-header h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -16px; 
+      width: 60px;
+      height: 3px;
+      background-color: #007bff; 
     }
 
     /* تنسيق كروت الفيديو */
     .video-grid-item {
-      margin-bottom: 40px;
-      transition: transform 0.3s ease;
+      margin-bottom: 30px;
     }
-    .video-grid-item:hover {
-      transform: translateY(-5px);
-    }
+    
     .video-wrapper {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      padding-bottom: 56.25%; 
       height: 0;
       overflow: hidden;
-      border-radius: 8px;
       background-color: #000;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    
+    .video-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
     .video-wrapper iframe {
       position: absolute;
       top: 0;
@@ -64,17 +94,20 @@
       height: 100%;
       border: 0;
     }
+
     .video-caption {
       padding-top: 15px;
     }
+    
     .video-caption h3 {
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 5px;
-      color: #333;
+      color: #222;
     }
+    
     .video-caption p {
-      color: #777;
+      color: #666;
       font-size: 14px;
       margin: 0;
     }
@@ -112,101 +145,94 @@
   <main class="main">
 
     <div class="page-title" data-aos="fade">
-      <div class="container">
-        <nav class="breadcrumb">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio</li>
-          </ol>
-        </nav>
-        <h1>Work & Breakdowns</h1>
-        <p>A selection of my latest work organized by category.</p>
+      <div class="container text-center">
+        <h1>Selected Work</h1>
+        <p>A collection of my work categorized by Film, Commercials, and Television.</p>
       </div>
     </div><section id="portfolio" class="portfolio section">
       <div class="container" data-aos="fade-up">
 
-        <div class="portfolio-section-divider">
-          <h2 class="category-title">Showreel & Breakdowns</h2>
+        <div class="portfolio-category">
+          <div class="category-header">
+            <h2>Film</h2>
+          </div>
           <div class="row">
             
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/gQkSXrKffOI" title="3D Breakdown Compilation" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/gQkSXrKffOI" title="Film Project" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
-                <h3>3D Generalist Showreel</h3>
-                <p>Comprehensive Breakdown</p>
+                <h3>Film Title Here</h3>
+                <p>Environment Creation & Set Extension</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 video-grid-item">
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Film Project 2" allowfullscreen></iframe>
+              </div>
+              <div class="video-caption">
+                <h3>Another Film Title</h3>
+                <p>VFX Breakdown</p>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div class="portfolio-section-divider">
-          <h2 class="category-title">Commercials</h2>
+        <div class="portfolio-category">
+          <div class="category-header">
+            <h2>Commercials</h2>
+          </div>
           <div class="row">
             
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial Project 1" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial 1" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
-                <h3>Brand Campaign Name</h3>
-                <p>Environment & Lighting</p>
+                <h3>Brand Name Commercial</h3>
+                <p>Product Visualization</p>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial Project 2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial 2" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
-                <h3>Product Visualization</h3>
-                <p>Hard Surface Modeling</p>
+                <h3>Campaign Title</h3>
+                <p>Lighting & Rendering</p>
               </div>
             </div>
 
           </div>
         </div>
 
-        <div class="portfolio-section-divider">
-          <h2 class="category-title">Television & Series</h2>
+        <div class="portfolio-category">
+          <div class="category-header">
+            <h2>Television</h2>
+          </div>
           <div class="row">
             
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="TV Series" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="TV Series 1" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
-                <h3>TV Series Title</h3>
-                <p>Set Extension & Matchmove</p>
-              </div>
-            </div>
-
-             <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="TV Series 2" allowfullscreen></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>TV Series Title 2</h3>
+                <h3>TV Series Name</h3>
                 <p>Environment Layout</p>
               </div>
             </div>
 
-          </div>
-        </div>
-
-        <div class="portfolio-section-divider">
-          <h2 class="category-title">Personal Projects</h2>
-          <div class="row">
-            
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Personal Project" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="TV Series 2" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
-                <h3>Natural Landscape Study</h3>
-                <p>Gaea & SpeedTree Workflow</p>
+                <h3>Series Title Breakdown</h3>
+                <p>Set Dressing & Matte Painting</p>
               </div>
             </div>
 
