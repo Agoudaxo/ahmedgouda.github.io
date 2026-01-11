@@ -21,15 +21,31 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">س
 
   <style>
     /* =========================================
-       تعديل المسافات لعنوان الصفحة (طلبك الحالي)
+       تعديل عنوان الصفحة وإضافة صورة خلفية من الإنترنت
        ========================================= */
     .page-title {
-      padding-top: 120px;    /* مسافة كبيرة من الأعلى */
-      padding-bottom: 80px;  /* مسافة كبيرة من الأسفل */
+      /* تم استخدام صورة عالية الدقة من Unsplash بطابع تقني */
+      /* تم زيادة الشفافية البيضاء إلى 0.9 لجعل الصورة باهتة جداً */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('assets/img/BK/Cover.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding-top: 120px;
+      padding-bottom: 80px;
+      margin-bottom: 60px;
+    }
+    
+    .page-title h1 {
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .page-title p {
+      color: #c0c0c0;
+      font-weight: 500;
     }
 
     /* فاصل بين الأقسام */
@@ -40,14 +56,14 @@
     /* تنسيق عناوين الأقسام */
     .category-header {
       margin-bottom: 40px;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #ffffff;
       padding-bottom: 15px;
     }
     
     .category-header h2 {
       font-size: 28px;
       font-weight: 700;
-      color: #111;
+      color: #ffffff;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin: 0;
