@@ -2881,7 +2881,7 @@ section,
   background-repeat: no-repeat;
   background-size: 100%; 
   opacity: 0;
-  animation: fadeEffect 30s infinite, slowPan 40s linear infinite alternate;
+  animation: fadeEffect 5s infinite, slowPan 10s linear infinite alternate;
 }
 
 /* خامساً: تحديد صورك وتوقيت ظهورها */
