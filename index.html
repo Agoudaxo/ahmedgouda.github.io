@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - Ahmed Gouda</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Ahmed Gouda | 3D Generalist</title>
+  <meta name="description" content="Portfolio of Ahmed Gouda, a 3D Generalist specializing in Environment Art and VFX Set Extensions.">
+  <meta name="keywords" content="Ahmed Gouda, 3D Generalist, Environment Art, VFX, Set Extension">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -22,247 +22,130 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <style>
-    /* خلفية العنوان مع الشفافية */
-    .page-title {
-      background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.9), rgba(32, 32, 32, 0.9)), 
-        url('assets/img/BK/Cover.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      padding-top: 120px;
-      padding-bottom: 80px;
-      margin-bottom: 60px;
-    }
-    
-    .page-title h1 { color: #cecece; font-weight: 800; }
-    .page-title p { color: #acacac; font-weight: 500; }
-
-    /* تنسيق الأقسام */
-    .portfolio-category { margin-bottom: 80px; }
-    
-    .category-header {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 15px;
-    }
-    
-    .category-header h2 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #e6e6e6;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin: 0;
-      position: relative;
-      display: inline-block;
-    }
-
-    .category-header h2::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -16px; 
-      width: 60px;
-      height: 3px;
-      background-color: #007bff; 
-    }
-
-    /* تنسيق الفيديو */
-    .video-grid-item { margin-bottom: 30px; }
-    
-    .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%; 
-      height: 0;
-      overflow: hidden;
-      background-color: #000;
-      border-radius: 4px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .video-wrapper:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-    
-    .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .video-caption { padding-top: 15px; }
-    .video-caption h3 { font-size: 18px; font-weight: 600; margin-bottom: 5px; color: #dbdbdb; }
-    .video-caption p { color: #929292; font-size: 14px; margin: 0; }
-  </style>
 </head>
 
-<body class="portfolio-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
       <div class="header-social-links">
-        <a href="https://x.com/AhmedGoudaxo" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/ahmedgoudaxo/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+         <a href="https://www.linkedin.com/in/goudacgi"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/goudacgi/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/gouda_cgi/"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/goudacgi"><i class="bi bi-twitter-x"></i></a>
       </div>
+
     </div>
   </header>
 
   <main class="main">
 
-    <div class="page-title" data-aos="fade">
-      <div class="container text-center">
-        <h1>Selected Work</h1>
-        <p>A collection of my work categorized by Film, Commercials, and Television.</p>
+    <section id="hero" class="hero section">
+
+      <div class="slideshow-container">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+        <div class="slide slide4"></div>
+        <div class="slide slide5"></div>
+
       </div>
-    </div>
 
-    <section id="portfolio" class="portfolio section">
-      <div class="container" data-aos="fade-up">
-        
-        <div class="portfolio-category">
-          <div class="category-header">
-            <h2>Television</h2>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="hero-content">
+              <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Ahmed Gouda</span></h1>
+              
+              <h2 data-aos="fade-up" data-aos-delay="300">
+                <span class="typed" data-typed-items="3D Generalist, Environment Artist, VFX Specialist"></span>
+              </h2>
+              
+              <p data-aos="fade-up" data-aos-delay="400">
+                A versatile <strong>3D Generalist</strong> merging engineering precision with artistic vision. <br>
+                While I handle the full pipeline, my true passion lies in crafting immersive environments and seamless VFX set extensions that bridge the gap between reality and imagination.
+              </p>
+              
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                <a href="resume.html" class="btn btn-outline">Resume</a>
+              </div>
+              
+              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+                  <a href="https://www.linkedin.com/in/goudacgi"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/goudacgi/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/gouda_cgi/"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/goudacgi"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="row">
-
-
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/8zidirenTVY?list=PLe1yFg63tryiPGTJa6Nvj3VDj3IWPcPda" title="Ahwet El Mahata" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>QMuawiya</h3>
-                <p>Layout, Modeling, Texturing, Rendering</p>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/132eIOxtMio?list=PLe1yFg63tryiPGTJa6Nvj3VDj3IWPcPda" title="Ahwet El Mahata" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>The Imam’s Message </h3>
-                <p>3D Modeling & Texturing</p>
-              </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/qPcADg8qglk?list=PLe1yFg63tryiPGTJa6Nvj3VDj3IWPcPda" title="Albi wa Moftaho" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>Qalby w Mofta7o</h3>
-                <p>layout, modeling, texturing, animation, and rendering</p>
+          
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+              <div class="image-wrapper">
+                <img src="assets/img/profile/profile-square-11.webp" alt="Ahmed Gouda" class="img-fluid">
+                
+                <div class="floating-elements">
+                  <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
+                    <i class="bi bi-layers-fill"></i> 
+                    <span>Generalist</span>
+                  </div>
+                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
+                    <i class="bi bi-tree-fill"></i> 
+                    <span>Nature</span>
+                  </div>
+                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
+                    <i class="bi bi-magic"></i> 
+                    <span>VFX</span>
+                  </div>
+                </div>
+                
               </div>
             </div>
-
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/gQkSXrKffOI" title="Ahwet El Mahata" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>Qahwet El Mahata</h3>
-                <p>Layout, Modeling & Rendering</p>
-              </div>
-            </div>
-            
-
-          </div>
-        </div>
-
-        <div class="portfolio-category">
-          <div class="category-header">
-            <h2>Commercials</h2>
-          </div>
-          <div class="row">
-            
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/2Vpmt0Zh1Ew?list=PLe1yFg63tryiPGTJa6Nvj3VDj3IWPcPda" title="Etisalat Commercial" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>Etisalat Commercial</h3>
-                <p>Hard-surface modeling and shading</p>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/xwfsx2RjvyE?list=PLe1yFg63tryiPGTJa6Nvj3VDj3IWPcPda" title="Saudi National Day" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>Saudi National Day Campaign</h3>
-                <p>Hard-surface modeling and shading</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        
-        <div class="portfolio-category">
-          <div class="category-header">
-            <h2>Film</h2>
-          </div>
-          <div class="row">
-            
-            <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/qb-DviH2h9U?list=PLe1yFg63tryiPGTJa6Nvj3VDj3IWPcPda" title="Welad Rizk" allowfullscreen loading="lazy"></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>Welad Rizk (Film)</h3>
-                <p>3D Modeling & Shading</p>
-              </div>
-            </div>
-
           </div>
         </div>
 
       </div>
-    </section>
 
-  </main>
+    </section></main>
 
   <footer id="footer" class="footer">
+
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ahmed Gouda</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ahmed Gouda</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/AhmedGoudaxo"><i class="bi bi-twitter-x"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/ahmedgoudaxo/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/goudacgi"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/goudacgi/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/gouda_cgi/"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/goudacgi"><i class="bi bi-twitter-x"></i></a>
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="#">Gouda</a>
       </div>
     </div>
+
   </footer>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   <div id="preloader"></div>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -273,6 +156,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
   <script src="assets/js/main.js"></script>
 
 </body>
