@@ -21,16 +21,16 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <link href="assets/css/main.css" rel="stylesheet">س
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* =========================================
-       تعديل عنوان الصفحة وإضافة صورة خلفية من الإنترنت
-       ========================================= */
+    /* تنسيق خلفية العنوان */
     .page-title {
-      /* تم استخدام صورة عالية الدقة من Unsplash بطابع تقني */
-      /* تم زيادة الشفافية البيضاء إلى 0.9 لجعل الصورة باهتة جداً */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('assets/img/BK/Cover.jpg');
+      /* خلفية من الإنترنت - يمكنك استبدال الرابط بـ 'assets/img/اسم_الصورة.jpg' */
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop');
+      
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -40,30 +40,27 @@
     }
     
     .page-title h1 {
-      color: #ffffff;
+      color: #333;
       font-weight: 800;
     }
     .page-title p {
-      color: #c0c0c0;
+      color: #555;
       font-weight: 500;
     }
 
-    /* فاصل بين الأقسام */
-    .portfolio-category {
-      margin-bottom: 80px;
-    }
+    /* تنسيق الأقسام والفيديوهات */
+    .portfolio-category { margin-bottom: 80px; }
     
-    /* تنسيق عناوين الأقسام */
     .category-header {
       margin-bottom: 40px;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid #e0e0e0;
       padding-bottom: 15px;
     }
     
     .category-header h2 {
       font-size: 28px;
       font-weight: 700;
-      color: #ffffff;
+      color: #111;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin: 0;
@@ -81,10 +78,7 @@
       background-color: #007bff; 
     }
 
-    /* تنسيق كروت الفيديو */
-    .video-grid-item {
-      margin-bottom: 30px;
-    }
+    .video-grid-item { margin-bottom: 30px; }
     
     .video-wrapper {
       position: relative;
@@ -111,31 +105,16 @@
       border: 0;
     }
 
-    .video-caption {
-      padding-top: 15px;
-    }
-    
-    .video-caption h3 {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: #ffffff;
-    }
-    
-    .video-caption p {
-      color: #666;
-      font-size: 14px;
-      margin: 0;
-    }
+    .video-caption { padding-top: 15px; }
+    .video-caption h3 { font-size: 18px; font-weight: 600; margin-bottom: 5px; color: #222; }
+    .video-caption p { color: #666; font-size: 14px; margin: 0; }
   </style>
-
 </head>
 
 <body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -147,14 +126,12 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
       <div class="header-social-links">
         <a href="https://x.com/AhmedGoudaxo" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/ahmedgoudaxo/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       </div>
-
     </div>
   </header>
 
@@ -165,7 +142,9 @@
         <h1>Selected Work</h1>
         <p>A collection of my work categorized by Film, Commercials, and Television.</p>
       </div>
-    </div><section id="portfolio" class="portfolio section">
+    </div>
+
+    <section id="portfolio" class="portfolio section">
       <div class="container" data-aos="fade-up">
 
         <div class="portfolio-category">
@@ -176,7 +155,7 @@
             
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/gQkSXrKffOI" title="Film Project" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/ضع_كود_الفيديو_هنا" title="Film Project" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
                 <h3>Film Title Here</h3>
@@ -186,7 +165,7 @@
 
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Film Project 2" allowfullscreen></iframe>
+                 <iframe src="https://www.youtube.com/embed/ضع_كود_الفيديو_هنا" title="Film Project 2" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
                 <h3>Another Film Title</h3>
@@ -205,7 +184,7 @@
             
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial 1" allowfullscreen></iframe>
+                 <iframe src="https://www.youtube.com/embed/ضع_كود_الفيديو_هنا" title="Commercial 1" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
                 <h3>Brand Name Commercial</h3>
@@ -215,7 +194,7 @@
 
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Commercial 2" allowfullscreen></iframe>
+                 <iframe src="https://www.youtube.com/embed/ضع_كود_الفيديو_هنا" title="Commercial 2" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
                 <h3>Campaign Title</h3>
@@ -234,7 +213,7 @@
             
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/watch?v=8zidirenTVY" title="TV Series 1" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/8zidirenTVY" title="Muawiya Series" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
                 <h3>Muawiya Series</h3>
@@ -244,20 +223,11 @@
 
             <div class="col-lg-6 col-md-12 video-grid-item">
               <div class="video-wrapper">
-                <iframe src="https://youtu.be/8zidirenTVY?si=thaERPaHgrvLCWF4" title="TV Series 2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/132eIOxtMio" title="The Imam’s Message" allowfullscreen></iframe>
               </div>
               <div class="video-caption">
                 <h3>The Imam’s Message</h3>
                 <p>3D Modeling & Texturing </p>
-              </div>
-            </div>
-                        <div class="col-lg-6 col-md-12 video-grid-item">
-              <div class="video-wrapper">
-                <iframe src="https://youtu.be/132eIOxtMio?si=WAsaVVysARBBNhGk" title="TV Series 2" allowfullscreen></iframe>
-              </div>
-              <div class="video-caption">
-                <h3>Series Title Breakdown</h3>
-                <p>Set Dressing & Matte Painting</p>
               </div>
             </div>
 
@@ -265,7 +235,9 @@
         </div>
 
       </div>
-    </section></main>
+    </section>
+
+  </main>
 
   <footer id="footer" class="footer">
     <div class="container">
