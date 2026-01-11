@@ -2860,37 +2860,86 @@ section,
 * الكود الشامل والنهائي لخلفية الموقع
 **********************************************/
 
-/* أولاً: إلغاء الخلفيات السوداء للأقسام الرئيسية */
-section,
-.section,
-.footer {
+/* أولاً: إلغاء الخلفيات السوداء للأقسام الرئيسية *//* أولاً: إعدادات السكشن والفوتر (كما هي) */
+section, .section, .footer {
   background-color: transparent !important;
 }
 
 /* ثانياً: تعريف الحركات (Animations) */
-@keyframes fadeEffect { 0% { opacity: 0; } 8% { opacity: 1; } 33% { opacity: 1; } 41% { opacity: 0; } 100% { opacity: 0; } }
-@keyframes slowPan { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
-
-/* ثالثاً: حاوية السلايد شو الرئيسية والطبقة الشفافة */
-.slideshow-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
-.slideshow-container::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
-
-/* رابعاً: تنسيق كل الشرائح (الصور) */
-.slide {
-  position: absolute; top: 0; left: 0; width: 100%; height: 120%;
-  background-repeat: no-repeat;
-  background-size: 100%; 
-  opacity: 0;
-  animation: fadeEffect 1s infinite, slowPan 1s linear infinite alternate;
+/* تم تعديل النسب المئوية لتناسب 4 صور */
+@keyframes fadeEffect {
+  0% { opacity: 0; }
+  4% { opacity: 1; }   /* ظهور سريع في ثانية واحدة */
+  21% { opacity: 1; }  /* ثبات الصورة لمدة 4 ثواني تقريباً */
+  25% { opacity: 0; }  /* اختفاء */
+  100% { opacity: 0; } /* تظل مخفية لباقي الدورة */
 }
 
-/* خامساً: تحديد صورك وتوقيت ظهورها */
-/* ⭐⭐⭐ هنا تضع مسارات صورك الصحيحة ⭐⭐⭐ */
-.slide2 { background-image: url('/assets/img/BK/S01.png'); animation-delay: 5s, 0s; }
-.slide3 { background-image: url('/assets/img/BK/S02.png'); animation-delay: 10s, 0s; }
-.slide3 { background-image: url('/assets/img/BK/S03.png'); animation-delay: 20s, 0s; }
-.slide3 { background-image: url('/assets/img/BK/S04.png'); animation-delay: 30s, 0s; }
+@keyframes slowPan {
+  0% { transform: scale(1.1) translateX(0); }
+  100% { transform: scale(1.1) translateX(-2%); } /* تحريك بسيط جداً عشان النعومة */
+}
 
+/* ثالثاً: الحاوية والطبقة الشفافة */
+.slideshow-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  overflow: hidden; /* مهم عشان الصورة لما تتحرك متخرجش بره */
+}
 
-/* سادساً: الموبايل */s
-@media (max-width: 768px) { .slide { background-size: 250%; } }
+.slideshow-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* رابعاً: تنسيق الشرائح العام */
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* cover أفضل من 100% عشان تملأ الشاشة مهما كان حجمها */
+  opacity: 0; /* البداية مخفية */
+  /* المدة هنا 24 ثانية (4 صور × 6 ثواني) */
+  animation: fadeEffect 24s infinite linear, slowPan 24s infinite alternate;
+}
+
+/* خامساً: تحديد الصور وتوقيت التأخير (Delay) */
+/* المعادلة: كل صورة تتأخر 6 ثواني عن اللي قبلها */
+
+/* الصورة الأولى: تظهر فوراً */
+.slide1 { 
+  background-image: url('/assets/img/BK/S01.png'); 
+  animation-delay: 0s; 
+}
+
+/* الصورة الثانية: تظهر بعد 6 ثواني */
+.slide2 { 
+  background-image: url('/assets/img/BK/S02.png'); 
+  animation-delay: 6s; 
+}
+
+/* الصورة الثالثة: تظهر بعد 12 ثانية */
+.slide3 { 
+  background-image: url('/assets/img/BK/S03.png'); 
+  animation-delay: 12s; 
+}
+
+/* الصورة الرابعة: تظهر بعد 18 ثانية */
+.slide4 { 
+  background-image: url('/assets/img/BK/S04.png'); 
+  animation-delay: 18s; 
+}
+
+/* سادساً: الموبايل */
+@media (max-width: 768px) {
+  .slide { 
+    background-position: center top; /* تركيز الصورة في الموبايل */
+  } 
+}
